@@ -1,4 +1,4 @@
-# ${1:Pervasive Computing}
+# Pervasive Computing
 Pervasive computing (also called ubiquitous computing) is the growing trend towards embedding microprocessors in everyday objects so they can communicate information. The words pervasive and ubiquitous mean "existing everywhere." Pervasive computing devices are completely connected and constantly available.
 
 In academic year various assignment releated to Pervasive Computing are implemented by me. All assignments are uploaded in this repository.
