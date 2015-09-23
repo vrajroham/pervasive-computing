@@ -12,14 +12,14 @@ If you are a batchmate and have another assignments then make a pull request for
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-Any issues please create an issue and give complete details.
+Any issues please create an issue and give complete details or else drop a mail mailto:vaibhavraj.roham@gmail.com
 
 ## History
 1. Assignment 1 : Pizza Shop which will deliver order in 10 min by nearest branch. (Using Google Matrix API)
 2. Assignment 5 : Faculty Attendance using Samsung Smart TV Emulator. (Using Samsumg SDK)
 
 ## Credits
-Vaibhavraj Roham 
+Vaibhavraj Roham http://vrajport.net
 
 ## License
 Make changes according to your need. Fork it add feature and pull it back
