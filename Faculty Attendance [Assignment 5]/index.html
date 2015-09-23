@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>faculty</title>
+
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+
+		<!-- TODO : Javascript code -->
+		<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>
+
+		<!-- TODO : Style sheets code -->
+		<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
+
+		<!-- TODO: Plugins -->
+
+	</head>
+	<body bgcolor=white  onload="Main.onLoad();" onunload="Main.onUnload();">
+		<!-- Dummy anchor as focus for key events -->
+		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+		<font>
+			<center>
+					<h2>Sanjivani of College Engineering, Kopargaon.
+					<hr width="80%">
+					<h3></h3>
+			</center>				
+			<div style="margin-left:200px">
+				<h4>Computer Engineering</h4>
+				<table border=1 width="80%" id="cmTable">
+					<tr bgcolor="brown" align=center>
+						<th><font color=white>#</font></th>
+						<th><font color=white>Name</font></th>
+						<th><font color=white>Designation</font></th>
+						<th><font color=white>Attendance</font></th>
+					</tr>
+				</table><br>
+				<hr color="white">
+				<h4>Information Technology</h4>
+				<table border=1 width="80%" id="itTable">
+					<tr bgcolor="brown" align=center>
+						<th><font color=white>#</font></th>
+						<th><font color=white>Name</font></th>
+						<th><font color=white>Designation</font></th>
+						<th><font color=white>Attendance</font></th>
+					</tr>
+				</table><br>
+				<hr>
+				<h4>Civil Engineering</h4>
+				<table border=1 width="80%" id="ceTable">
+					<tr bgcolor="brown" align=center>
+						<th><font color=white>#</font></th>
+						<th><font color=white>Name</font></th>
+						<th><font color=white>Designation</font></th>
+						<th><font color=white>Attendance</font></th>
+					</tr>
+				</table><br>
+				<hr>
+				<h4>Mechanical Engineering</h4>
+				<table border=1 width="80%" id="meTable">
+					<tr bgcolor="brown" align=center>
+						<th><font color=white>#</font></th>
+						<th><font color=white>Name</font></th>
+						<th><font color=white>Designation</font></th>
+						<th><font color=white>Attendance</font></th>
+					</tr>
+				</table><br>
+				<hr>
+				<h4>Electronics and Telecommunication</h4>
+				<table border=1 width="80%" id="etcTable">
+					<tr bgcolor="brown" align=center>
+						<th><font color=white>#</font></th>
+						<th><font color=white>Name</font></th>
+						<th><font color=white>Designation</font></th>
+						<th><font color=white>Attendance</font></th>
+					</tr>
+				</table>
+				<hr>
+			</div>		
+		</font>
+	</body>
+	<script type="text/javascript">
+		if (window.XMLHttpRequest)
+		  {
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+			xmlhttp.open("GET","faculty.xml",false);
+			xmlhttp.send();
+			xmlDoc=xmlhttp.responseXML; 
+			name="";
+			desig="";
+			dept="";
+			status="";
+			short="";
+			cnt=1;
+			//var sdept = decodeURIComponent(window.location.search.match(/(\?|&)dept\=([^&]*)/)[2]);
+			var sdept="cm";
+			facultycnt=xmlDoc.getElementsByTagName("faculty");
+			for(i=0;i<facultycnt.length;i++){
+				name=xmlDoc.getElementsByTagName("faculty")[i].getAttribute("name");
+				desig=xmlDoc.getElementsByTagName("faculty")[i].getAttribute("desig");
+				dept=xmlDoc.getElementsByTagName("faculty")[i].getAttribute("deptfull");
+				short=xmlDoc.getElementsByTagName("faculty")[i].getAttribute("deptshort");
+				status=xmlDoc.getElementsByTagName("faculty")[i].getAttribute("status");
+				if(short=="cm")
+					additem("cmTable",name,desig,dept,status);
+				if(short=="it")
+					additem("itTable",name,desig,dept,status);
+				if(short=="ce")
+					additem("ceTable",name,desig,dept,status);
+				if(short=="me")
+					additem("meTable",name,desig,dept,status);
+				if(short=="etc")
+					additem("etcTable",name,desig,dept,status);
+			}
+			
+			function additem(tableID,name,desig,dept,status) {
+				var table = document.getElementById(tableID);
+				var rowCount = table.rows.length;
+				var row = table.insertRow(rowCount);
+
+				var cell1 = row.insertCell(0);
+				var element1 = document.createElement("label");
+				element1.type = "label";
+				element1.innerHTML="<center><b><font>-";
+				cnt++;
+				cell1.appendChild(element1);
+
+				var cell2 = row.insertCell(1);
+				var element2 = document.createElement("label");
+				element2.type = "label";
+				element2.innerHTML="<center><b><font>"+name;
+				cell2.appendChild(element2);				  
+
+				var cell3 = row.insertCell(2);
+				var element3 = document.createElement("label");
+				element3.type = "label";
+				element3.innerHTML="<center><b><font>"+desig;
+				cell3.appendChild(element3);				  
+
+
+				var cell4 = row.insertCell(3);
+				var element4 = document.createElement("label");
+				element4.type = "label";
+				element4.innerHTML="<center><b><font>"+status;
+				cell4.appendChild(element4);				  
+
+		}
+	</script>
+</html>

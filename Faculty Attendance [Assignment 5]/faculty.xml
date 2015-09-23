@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sres>
+	<faculty name="Faculty 1" deptshort="cm" deptfull="Computer Engineering" desig="Assistant Professor" status="Present">Faculty 1</faculty>
+	<faculty name="Faculty 2" deptshort="me" deptfull="Mechanical Engineering" desig="Assistant Professor" status="Present">Faculty 2</faculty>
+	<faculty name="Faculty 3" deptshort="ce" deptfull="Civil Engineering" desig="Assistant Professor" status="Present">Faculty 3</faculty>
+	<faculty name="Faculty 4" deptshort="it" deptfull="Information Technology" desig="Assistant Professor" status="Absent">Faculty 4</faculty>
+	<faculty name="Faculty 5" deptshort="etc" deptfull="Electronic and Telecommunication" desig="Assistant Professor" status="Present">Faculty 5</faculty>
+	<faculty name="Faculty 6" deptshort="etc" deptfull="Electronic and Telecommunication" desig="HOD" status="Present">Faculty 6</faculty>
+</sres>
