@@ -4,7 +4,6 @@ Pervasive computing (also called ubiquitous computing) is the growing trend towa
 In academic year various assignment releated to Pervasive Computing are implemented by me. All assignments are uploaded in this repository.
 
 If you are a batchmate and have another assignments then make a pull request for the same.
-Download the latest [buttons.css](http://unicorn-ui.com/buttons/showcase/css/buttons.css)
 
 ## Contributing
 1. Fork it!
