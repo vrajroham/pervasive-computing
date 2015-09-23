@@ -3,6 +3,9 @@ Pervasive computing (also called ubiquitous computing) is the growing trend towa
 
 In academic year various assignment releated to Pervasive Computing are implemented by me. All assignments are uploaded in this repository.
 
+If you are a batchmate and have another assignments then make a pull request for the same.
+Download the latest [buttons.css](http://unicorn-ui.com/buttons/showcase/css/buttons.css)
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -13,8 +16,8 @@ In academic year various assignment releated to Pervasive Computing are implemen
 Any issues please create an issue and give complete details.
 
 ## History
-Added Assignment 1 : Pizza Shop which will deliver order in 10 min by nearest branch. (Using Google Matrix API)
-Added Assignment 5 : Faculty Attendance using Samsung Smart TV Emulator. (Using Samsumg SDK)
+1. Assignment 1 : Pizza Shop which will deliver order in 10 min by nearest branch. (Using Google Matrix API)
+2. Assignment 5 : Faculty Attendance using Samsung Smart TV Emulator. (Using Samsumg SDK)
 
 ## Credits
 Vaibhavraj Roham 
