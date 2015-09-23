@@ -10,12 +10,14 @@ In academic year various assignment releated to Pervasive Computing are implemen
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+Any issues please create an issue and give complete details.
+
 ## History
 Added Assignment 1 : Pizza Shop which will deliver order in 10 min by nearest branch. (Using Google Matrix API)
 Added Assignment 5 : Faculty Attendance using Samsung Smart TV Emulator. (Using Samsumg SDK)
 
 ## Credits
-Vaibhavraj Roham
+Vaibhavraj Roham 
 
 ## License
 Make changes according to your need. Fork it add feature and pull it back
