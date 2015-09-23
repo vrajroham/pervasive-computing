@@ -1,0 +1,17 @@
+<% 
+	String bname=request.getParameter("news"); 
+	String blocation=request.getParameter("editor");
+%>
+<%@ page import="java.io.*" %>
+<% String bfile="/home/student/workspace/smarttv/messages.xml"; %>
+<% try{
+		PrintWriter pw=new PrintWriter(new FileOutputStream(bfile,true));
+		String data="<?xml version=\"1.0\" encoding=\"UTF-8\" ?><messages><m1 message=\"Hi\">Message</m1></messages>";
+		pw.println(data);
+		pw.close();
+		out.println("New Branch Added");
+		out.println(data);
+	}catch(Exception e){
+	    out.println(e);
+	} 
+%>

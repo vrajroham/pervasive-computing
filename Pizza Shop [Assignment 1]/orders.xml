@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<orders>
+<item list="Pizza Name 1,Pizza Name 5,Pizza Name 1" cname="xyz" city="kopargaon" street="Kopargaon" mobile="1234567890" price="100,500,100" quantity="3,1,10">xyz</item>
+<item list="Pizza Name 2,Pizza Name 6" cname="xyz" city="kopargaon" street="kop" mobile="9960796998" price="200,600" quantity="10,6">xyz</item>
+<item list="Pizza Name 1" cname="uyu" city="uiu" street="uuiu" mobile="1234567890" price="100" quantity="1">uyu</item>

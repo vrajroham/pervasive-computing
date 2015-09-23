@@ -1,0 +1,12 @@
+<html>
+  <head>
+   <title>Pizza Center</title>
+  </head>
+  <body bgcolor="black">
+	<font color="white"><center><h1>Administrator Panel</h1></center>
+	<hr width="40%">
+	<center>
+	<a href="addbranch.jsp"><button>Add Branch</button></a>
+	<a href=""><button>List Orders</button></a>  
+</body>
+</html>
