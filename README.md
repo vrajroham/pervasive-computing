@@ -19,7 +19,7 @@ Any issues please create an issue and give complete details or else drop a mail 
 2. Assignment 5 : Faculty Attendance using Samsung Smart TV Emulator. (Using Samsumg SDK)
 
 ## Credits
-Vaibhavraj Roham http://vrajport.net
+Vaibhavraj Roham http://vrajroham.me
 
 ## License
 Make changes according to your need. Fork it add feature and pull it back
